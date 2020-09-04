@@ -9,6 +9,7 @@ import { BrowserRouter,
   } from "react-router-dom";
 import Home from './Views/Home'
 import About from './Views/About'
+import Product from './Views/Product'
 
 
 function App() {
@@ -26,9 +27,16 @@ function App() {
 <Route exact path="/">
   <Home/>
 </Route>
+
+<Route path="/products/:id">
+<Product/>
+</Route>
+
+
 <Route path="/about">
 <About/>
 </Route>
+
 
 </Switch>
 
